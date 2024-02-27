@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.20"
+  },
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "install": "^0.13.0"
+  }
+}

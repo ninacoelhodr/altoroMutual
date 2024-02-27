@@ -1,0 +1,12 @@
+{
+  "input": {
+  "username": "#uid",
+  "password": "#passw"
+  },
+  "button": {
+    "login": "Login" 
+  }, 
+  "id": {
+    "mainMessage" : "_ctl0__ctl0_Content_Main_message"
+  }
+}
