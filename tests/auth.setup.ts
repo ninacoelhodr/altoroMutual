@@ -1,17 +1,15 @@
 import { test as setup, expect } from '@playwright/test';
+import LoginPage from './Pages/login/LoginPage';
+import testData from './data/testData.json'
 
 
 const authFile = 'playwright/.auth/user.json';
-
-let username = process.env.USER ?? '';
-let password = process.env.PASSWORD ?? ''
+setup.use({ storageState: { cookies: [], origins: [] } });
 
 setup('authenticate', async ({ page }) => {
-  await page.goto('https://demo.testfire.net/');
-  await page.getByRole('link', { name: 'Sign In' }).click();
-  await page.locator('#uid').fill(username);
-  await page.locator('#passw').fill(password);
-  await page.getByRole('button', { name: 'Login' }).click();
-  await expect(page.locator('h1')).toContainText('Hello John Smith');
+  await page.goto('/login.jsp')
+  const loginPage = new LoginPage(page)
+  await loginPage.login(process.env.USER, process.env.PASSWORD)
+  await expect(page.locator('h1')).toContainText(testData.login.name);
   await page.context().storageState({ path: authFile });
 });

@@ -1,0 +1,37 @@
+{
+  "Home": {
+    "text": {
+      "title": "Altoro Mutual",
+      "signIn": "Sign In",
+      "sigOff": "Sign Off"
+    }
+  },
+  "Login": {
+    "input": {
+      "username": "#uid",
+      "password": "#passw"
+    },
+    "button": {
+      "login": "Login"
+    },
+    "id": {
+      "mainMessage": "_ctl0__ctl0_Content_Main_message"
+    }
+  },
+  "Transaction": {
+    "id": {
+      "credits": "credits",
+      "debits": "debits"
+    }
+  }, 
+  "NavBar": {
+    "link": {
+      "myAccount": "MY ACCOUNT"
+    }
+  },
+  "MyAccount": {
+    "button": {
+      "go": "GO"
+    }
+  }
+}

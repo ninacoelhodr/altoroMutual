@@ -2,5 +2,8 @@
   "login" : { 
     "name" : "Hello John Smith",
     "errorMessage": "Login Failed: We're sorry, but this username or password was not found in our system. Please try again."
+  },
+  "MyAccount" : {
+    "acocuntHistory": "Account History - 800003 Checking"
   }
 }
