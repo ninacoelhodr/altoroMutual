@@ -3,8 +3,8 @@ import { test as setup, expect } from '@playwright/test';
 
 const authFile = 'playwright/.auth/user.json';
 
-let username = process.env.USER?.toString() ?? '';
-let password = process.env.PASSWORD?.toString() ?? ''
+let username = process.env.USER ?? '';
+let password = process.env.PASSWORD ?? ''
 
 setup('authenticate', async ({ page }) => {
   await page.goto('https://demo.testfire.net/');

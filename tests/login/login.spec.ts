@@ -9,8 +9,6 @@ test.describe('Login', () => {
     expect(await page.title()).toContain('Altoro Mutual');
     await page.getByRole('link', { name: 'Sign In' }).click();
   });
-  console.log(process.env.USER)
-  console.log(process.env.PASSWORD)
 test('Valid Login', async ({ page }) => {
   const loginPage = new LoginPage(page)
   await loginPage.login(process.env.USER, process.env.PASSWORD)
