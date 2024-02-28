@@ -45,6 +45,6 @@ test.describe('Transactions', () => {
   test('Empty Value Transaction', async () => {
     await transactionPage.performTransaction('800003', '');
     await transactionPage.expectDialogWithMessage("Transfer Amount must be a number greater than 0.");
-});
+  });
 });
 
